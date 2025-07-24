@@ -21,7 +21,7 @@ jobs:
       run: mvn compile
   security-check:
         runs-on: ubuntu-latest
-        need: compile
+        needs: compile
       
         steps:
         - uses: actions/checkout@v4
